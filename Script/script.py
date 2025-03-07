@@ -37,7 +37,7 @@ def clicar_confirmar():
 while True:
     # Envia as mensagens com cooldown de 10 segundos
     time.sleep(5)
-    enviar_mensagem(f"zwork <@{user_id}>", 10)
+    enviar_mensagem(f"zwork", 10)
     enviar_mensagem(f"zbeijar <@{user_id}>", 10)
     enviar_mensagem(f"zcafune <@{user_id}>", 10)
     enviar_mensagem(f"zabracar <@{user_id}>", 10)

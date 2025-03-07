@@ -18,14 +18,14 @@ def clicar_confirmar():
 # Ciclo principal
 while True:
     # Envia as mensagens com cooldown de 10 segundos
-    enviar_mensagem("zwork <@225811122706579457>", 10)
-    enviar_mensagem("zbeijar <@225811122706579457>", 10)
-    enviar_mensagem("zcafune <@225811122706579457>", 10)
-    enviar_mensagem("zabracar <@225811122706579457>", 10)
-    enviar_mensagem("zsocar <@225811122706579457>", 10)
+    enviar_mensagem("zwork <@id>", 10)
+    enviar_mensagem("zbeijar <@id>", 10)
+    enviar_mensagem("zcafune <@id>", 10)
+    enviar_mensagem("zabracar <@id>", 10)
+    enviar_mensagem("zsocar <@id7>", 10)
 
     # Envia a mensagem "zrep" com cooldown de 30 minutos e clica no botão "✔️ confirmar"
-    enviar_mensagem("zrep <@225811122706579457>", 1800)  # 1800 segundos = 30 minutos
+    enviar_mensagem("zrep <@id>", 1800)  # 1800 segundos = 30 minutos
     clicar_confirmar()
 
     # Espera 30 minutos antes de reiniciar o ciclo

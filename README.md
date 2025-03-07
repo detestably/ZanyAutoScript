@@ -1,6 +1,6 @@
 # Zany Bot Task Automator
 
-Este script automatiza interações com o bot **Zany** no Discord, enviando comandos periodicamente para ganhar dinheiro, XP e enviar reputação (rep) automaticamente.
+Este script automatiza interações com o Bot **Zany** no Discord, enviando comandos periodicamente para ganhar dinheiro, XP e enviar reputação (rep) automaticamente.
 
 ## 🚀 Funcionalidades
 

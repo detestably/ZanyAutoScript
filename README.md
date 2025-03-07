@@ -48,5 +48,5 @@ Este projeto está sob a licença MIT. Sinta-se livre para modificar e compartil
 
 ---
 
-Criado por [Detestably].
+Criado por [Detestably](https://github.com/detestably).
 

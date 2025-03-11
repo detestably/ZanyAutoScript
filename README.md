@@ -4,10 +4,10 @@ Este script automatiza interações com o Bot **Zany** no Discord, enviando coma
 
 ## 🚀 Funcionalidades
 
-- 🔹 **Envia comandos automaticamente** (`zwork`, `zbeijar`, `zcafune`, `zabracar`, `zsocar`)
-- 🔹 **Ganha experiência e dinheiro ao longo do tempo**
-- 🔹 **Envia reputação (`zrep`) a cada 30 minutos**
-- 🔹 **Clica no botão de confirmação automaticamente**
+- **Envia comandos automaticamente** (`zwork`, `zbeijar`, `zcafune`, `zabracar`, `zsocar`)
+- **Ganha experiência e dinheiro ao longo do tempo**
+- **Envia reputação (`zrep`) a cada 30 minutos**
+- **Clica no botão de confirmação automaticamente**
 
 ## 📋 Pré-requisitos
 

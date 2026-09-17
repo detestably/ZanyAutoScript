@@ -1,52 +1,82 @@
-# Zany Bot Task Automator
-
-Este script automatiza interações com o Bot **Zany** no Discord, enviando comandos periodicamente para ganhar dinheiro, XP e enviar reputação (rep) automaticamente.
-
-## 🚀 Funcionalidades
-
-- **Envia comandos automaticamente** (`zwork`, `zbeijar`, `zcafune`, `zabracar`, `zsocar`)
-- **Ganha experiência e dinheiro ao longo do tempo**
-- **Envia reputação (`zrep`) a cada 30 minutos**
-- **Clica no botão de confirmação automaticamente**
-
-## 📋 Pré-requisitos
-
-Antes de usar este script, certifique-se de ter:
-
-- Python instalado (versão 3.x recomendada)
-- A biblioteca `pyautogui` instalada
-- O Discord aberto e pronto para receber os comandos
-
-### 📦 Instalação das Dependências
-
-```bash
-pip install pyautogui
-```
-
-## 🛠 Como Usar
-
-1. Abra o Discord e certifique-se de que a janela onde os comandos devem ser enviados está selecionada.
-2. Execute o script com o comando:
-
-```bash
-python nome_do_script.py
-```
-
-3. O script enviará automaticamente os comandos com os intervalos apropriados.
-
-## ⚠️ Avisos Importantes
-
-- Coloque o ID do usuário ou remova a menção caso esteja casado.
-- O uso de automação em bots de terceiros pode violar os termos de serviço do Discord ou do próprio bot Zany. Utilize com responsabilidade.
-- Caso o bot tenha mecanismos anti-automação, seu uso pode ser restringido ou banido.
-- Certifique-se de que a tela do Discord está visível para que os comandos sejam digitados corretamente.
-- Para a função de clicar no botão de confirmação, será necessário ajustar a posição do botão na tela.
-
-## 📜 Licença
-
-Este projeto está sob a licença MIT. Sinta-se livre para modificar e compartilhar, respeitando os termos da licença.
+<div align="center">
+  <h1 align="center">Z-Auto 🤖</h1>
+  <p align="center">
+    <strong>Automação Inteligente e Invisível para o Bot Zany no Discord</strong>
+  </p>
+  <p align="center">
+    <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python" alt="Python">
+    <img src="https://img.shields.io/badge/Playwright-Automated-green?style=for-the-badge&logo=playwright" alt="Playwright">
+    <img src="https://img.shields.io/badge/Typer-CLI-orange?style=for-the-badge" alt="Typer">
+  </p>
+</div>
 
 ---
 
-Criado por [Detestably](https://github.com/detestably).
+## 📌 Sobre o Projeto
 
+O **Z-Auto** é uma ferramenta de automação avançada criada para interagir com o bot *Zany* no Discord de maneira completamente autônoma, segura e **invisível**.
+
+Diferente de scripts tradicionais de Macro (como PyAutoGUI) que sequestram o seu mouse e teclado, o Z-Auto utiliza a tecnologia **Playwright** para rodar um navegador Chromium em *background* (modo Headless). Isso permite que você continue usando o seu computador normalmente enquanto a automação trabalha para você em um servidor e canal específicos!
+
+### ✨ Principais Funcionalidades
+
+- **🥷 Navegação Invisível (Headless):** O bot roda por baixo dos panos, sem abrir janelas ou tomar o controle do seu PC.
+- **🕒 Humanização Avançada:** Os tempos de espera (cooldowns) são aleatorizados a cada execução para simular com precisão o comportamento de um usuário real e evitar detecções.
+- **⚙️ Menu CLI Interativo:** Interface de linha de comando belíssima construída com `Typer` e `Rich`, permitindo configurar IDs, Token e Tempos de forma dinâmica.
+- **🔓 Injeção de Token Segura:** Burlar as restrições de login do Discord injetando o token de usuário diretamente no `localStorage` do navegador isolado.
+- **🎯 Clique Dinâmico em Componentes:** O bot escaneia a página HTML dinamicamente atrás do botão "✔️ confirmar", eliminando a necessidade de buscar por "prints de tela".
+
+---
+
+## 🚀 Como Instalar
+
+Siga os passos abaixo para preparar o seu ambiente:
+
+1. **Clone o repositório ou acesse a pasta do projeto:**
+   ```bash
+   cd caminho/para/o/Zany
+   ```
+
+2. **Instale as dependências Python necessárias:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Baixe o navegador invisível do Playwright:**
+   ```bash
+   playwright install chromium
+   ```
+
+---
+
+## 🎮 Como Usar
+
+O projeto possui um menu interativo extremamente fácil de usar. Para iniciá-lo, basta rodar:
+
+```bash
+python main.py
+```
+
+### O Menu Principal
+Ao iniciar, você verá uma interface rica e colorida com as seguintes opções:
+
+- **1. Iniciar Bot:** Começa a automação imediatamente.
+- **2. Configurações Avançadas:** Menu onde você pode salvar:
+  - Seu Token do Discord
+  - ID do Servidor & ID do Canal
+  - ID do Usuário Alvo
+  - Controlar o intervalo aleatório (Ex: de 20 a 120 minutos)
+  - Ligar/Desligar ações específicas (zwork, zbeijar, etc)
+
+*(Dica: Se quiser pular o menu e rodar a automação diretamente, execute `python main.py run`)*
+
+---
+
+## ⚠️ Aviso Legal (Disclaimer)
+
+O uso de "Self-Bots" (automatizar contas de usuários comuns) vai contra os **Termos de Serviço (TOS) do Discord**. Embora o **Z-Auto** possua sistemas robustos de "humanização" (atrasos aleatórios e controle de navegador simulando um usuário real) para mitigar os riscos e ser extremamente difícil de detectar, você deve utilizar esta ferramenta por sua própria conta e risco. Os desenvolvedores não se responsabilizam por eventuais suspensões da sua conta.
+
+---
+<div align="center">
+  Feito com 💜 para maximizar o seu grind!
+</div>
